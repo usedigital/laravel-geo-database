@@ -1,36 +1,31 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
-    "license": "MIT",
-    "type": "project",
+    "name": "usedigital/laravel-geo-database",
+    "description": "Laravel Global Geo Info Database",
+    "type": "library",
     "require": {
-        "php": ">=5.6.4",
-        "laravel/lumen-framework": "5.3.*",
-        "vlucas/phpdotenv": "~2.2",
-        "dingo/api": "1.0.x@dev"
+        "php": ">=7",
+        "laravel/framework": ">=5.8"
     },
-    "require-dev": {
-        "fzaninotto/faker": "~1.4",
-        "phpunit/phpunit": "~5.0",
-        "mockery/mockery": "~0.9"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renalcio Carlos",
+            "email": "carlos@usedigital.com.br",
+            "homepage": "http://usedigital.com.br",
+            "role": "Co-founder & Developer"
+        }
+    ],
+    "minimum-stability": "dev-master",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UseDigital\\LaravelGeoDatabase\\GeoDatabaseServiceProvider"
+            ]
+        }
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "UseDigital\\LaravelGeoDatabase\\": "src"
         }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/",
-            "database/"
-        ]
-    },
-    "scripts": {
-        "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\""
-        ]
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

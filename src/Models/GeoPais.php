@@ -1,0 +1,17 @@
+<?php
+
+namespace UseDigital\LaravelGeoDatabase\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class GeoPais extends Model
+{
+    protected $table = 'paises';
+
+    protected $fillable = ['id', 'nome', 'sigla', 'nome_en', 'sigla', 'bacen'];
+
+    public function estados()
+    {
+        return $this->hasMany(GeoEstado::class);
+    }
+}
