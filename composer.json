@@ -15,12 +15,14 @@
             "role": "Co-founder & Developer"
         }
     ],
-    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
                 "UseDigital\\LaravelGeoDatabase\\GeoDatabaseServiceProvider"
             ]
+        },
+        "branch-alias": {
+            "dev-master": "master"
         }
     },
     "autoload": {
