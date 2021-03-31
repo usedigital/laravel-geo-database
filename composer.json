@@ -15,7 +15,7 @@
             "role": "Co-founder & Developer"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
