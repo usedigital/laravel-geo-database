@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class GeoPais extends Model
 {
-    protected $table = 'paises';
+    protected $table = 'geo_paises';
 
     protected $fillable = ['id', 'nome', 'sigla', 'nome_en', 'sigla', 'bacen'];
+
 
     public function estados()
     {
