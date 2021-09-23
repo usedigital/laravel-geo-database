@@ -71,7 +71,7 @@ Route::post('estados/select2/{pais_id?}', function(Request $request, $pais_id = 
 
 
     $itens->transform(fn(GeoEstado $item, $key) => [
-        'id' => $item->nome,
+        'id' => $item->uf,
         'text' => $item->nome,
         'selected' => ($item->id == $request->selected_value) || ($request->search && Str::lower($item->uf) === Str::lower($request->search)),
     ]);
